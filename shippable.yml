@@ -10,6 +10,7 @@ python:
 env:
  global:
   - foo=bar
+  - secure: CDNi9ukITCXUf6VMSYxTRQaXxcx6dR960oNL4Uprw9KD+lSUANCKvAORGoKXRljHg2Dh0rXMp3rkg3TNcafYvrKv99m7tJGKbD3JfmSMcvik0d2DZoGrkyIFKIiNco5fYqwsxctFZkh7APgvqB1Z3g3YFE1x0/L6KvvwD0WGBwqnedR+/2p0encPLayDYuGFfa72KVLdx6y/Xz0dTAewHkYhO/xtZaqgFgXxY5opoHIF1cnfQ6x1xNiajUzf1wy51g04sw3tuH7JOMcJB6yllqvheXt9LYtuVDQpAEJFA3hkVVnwITnBuI1GAaJ6N3/ZolCtlpx7ofEq8u+lX9j74A== 
   - secure: KzH0xTi6ZQAtE05yG48TFSsFUSGUxC8LZ+Y0APKN6+JkfftwRc9EW3nSPW3YWENJM1DGMdiJj/KzM0BjJ2JmeLOR2e5TsIj8RR/n0fQQ9AP/xQjqFHfSKiVSqaV3OwiKi+23+jBGh0G7M/+snx+NVOiK58bpCYg05mPwPGOQ9orku6SUZmZy1PTxGtm8s6SZ5Y5TBpWnbLygj3WDFdLxVWOgklgRSAD4fV3+heoUe3ifIcGcUT6oNggbwrYNzl7Vi/Too2cax/j+IJTklJPLKaG3+mGUAIlkJNk8oqTUG7xk/qU1kJoIE75QPo9q/jpQgdYzAop+01/jJgxp5MwaTQ==
  matrix:
   - A=B
@@ -24,3 +25,4 @@ build:
   ci:
     - python --version
     - echo $A and $C and $key1
+    - echo $api_key
