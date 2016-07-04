@@ -4,3 +4,7 @@ language: python
 # Version number
 python:
   - 2.6
+
+build:
+ ci:
+   - sleep 8000s
